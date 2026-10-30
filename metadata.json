@@ -1,0 +1,8 @@
+{
+  "name": "CM Esports - Free Fire Tournament & Custom Portal",
+  "description": "Play Free Fire paid and free custom matches, 1v4 tournaments, win real cash prizes, view live room credentials, and get instant tournament assistance from CM AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

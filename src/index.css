@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: 'Outfit', system-ui, sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+  
+  --color-esports-bg: #0b0e14;
+  --color-esports-card: #151b26;
+  --color-esports-card-hover: #1b2333;
+  --color-esports-accent: #ff2a5f;
+  --color-esports-gold: #ffd700;
+  --color-esports-cyan: #00f0ff;
+  --color-esports-emerald: #10b981;
+}
+
+body {
+  background-color: #0b0e14;
+  color: #e2e8f0;
+  font-family: var(--font-body);
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+.glow-accent {
+  box-shadow: 0 0 24px rgba(255, 42, 95, 0.4);
+}
+
+.glow-gold {
+  box-shadow: 0 0 24px rgba(255, 215, 0, 0.35);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.mobile-dock {
+  padding-bottom: env(safe-area-inset-bottom, 12px);
+}
